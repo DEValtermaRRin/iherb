@@ -1,0 +1,120 @@
+.footer {
+  position: relative;
+  &__grid {
+    margin-top: 120px;
+    display: grid;
+    grid-template: 67px 1fr /1fr 780px 465px;
+    grid-template-areas:
+      "logo null null"
+      "links info payment";
+  }
+
+  &__logo-links {
+    grid-area: links;
+  }
+
+  &__links {
+  }
+
+  &__link {
+    margin-top: 28px;
+    &:not(:first-child) {
+      margin-top: 19px;
+    }
+  }
+
+  &__link-item {
+    @include inter(500);
+    font-size: 24px;
+    line-height: 20px;
+    color: #575f78;
+  }
+
+  &__info {
+    grid-area: info;
+  }
+
+  &__payment {
+    grid-area: payment;
+  }
+
+  &__copywrite {
+margin-top: 30px;
+  }
+  &__copywrite-text {
+    text-align: right;
+    @include inter(500);
+    font-size: 18px;
+    line-height: 20px;
+    color: #fff;
+  }
+}
+
+.top-head {
+  &__logo {
+  }
+}
+.info-footer {
+  &__bottom-head {
+  }
+
+  &__border-img {
+    background-color: #1b2846;
+    padding: 7px;
+    border-radius: 12px;
+  }
+
+  &__text {
+    margin-top: 30px;
+    @include inter(400);
+    font-size: 14px;
+    line-height: 19px;
+    color: #7996dc;
+  }
+}
+.bottom-head {
+  &__flex {
+    &__footer {
+      margin-top: 0;
+      flex-direction: row-reverse;
+      justify-content: start;
+      & img {
+        -webkit-filter: grayscale(100%);
+        filter: grayscale(100%);
+      }
+    }
+  }
+
+  &__icon {
+  }
+}
+.payment-footer {
+  &__flex {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 4px;
+  }
+
+  &__card {
+    padding: 15px 6px 13px 7px;
+    background-color: #1b2846;
+    border-radius: 4px;
+    gap: 5px;
+    &:first-child {
+      padding: 4px 12px;
+    }
+  }
+}
+
+.rectangle{
+
+  position: absolute;
+bottom: -150px;
+  background: #15366c;
+  width: 100%;
+  height: 200px;
+  filter: blur(150px);
+  z-index: -3;
+
+}

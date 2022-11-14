@@ -1,0 +1,112 @@
+.horder {
+  position: relative;
+  &__grid {
+    margin-top: 243px;
+    display: grid;
+    grid-template: repeat(2, 1fr) / 420px 200px 1000px 8px;
+    grid-template-areas:
+      "title none list points"
+      "btn none list points";
+    justify-items: center;
+  }
+
+  &__left {
+    grid-area: title;
+    align-self: flex-end;
+  }
+
+  &__btn {
+    grid-area: btn;
+    justify-self: start;
+  }
+
+  &__right {
+    grid-area: list;
+    // margin-left: 202px;
+  }
+
+  &__aside {
+    grid-area: points;
+    height: 186px;
+    margin-left: 87px;
+    align-self: center;
+  }
+}
+.container {
+}
+.left-horder {
+  &__title {
+    @include inter(600);
+    font-size: 86px;
+    line-height: 104px;
+    color: #e7ebf2;
+    width: 425px;
+  }
+}
+.right-horder {
+  &__ol {
+    list-style-type: none;
+    counter-reset: my-counter;
+  }
+}
+.list-horder {
+  &__item {
+    @include inter(500);
+    font-size: 24px;
+    line-height: 29px;
+    color: #fcfcfc;
+    background: radial-gradient(100% 100% at 50.05% 0%, #204073 0%, rgba(32, 64, 114, 0) 100%), #1c2b4b;
+    border-radius: 28px;
+    padding: 34px;
+    width: 995px;
+    color: #586079;
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+    &:hover {
+      font-size: 24px;
+      color: #fcfcfc;
+      background: radial-gradient(100% 100% at 50.05% 0%, #5b2c3d 0%, rgba(91, 44, 61, 0) 100%), #1c2b4b;
+      cursor: pointer;
+      .list-horder__text::before {
+        background: #5f9ff5;
+      }
+    }
+
+  }
+
+  &__text {
+    display: block;
+    &::before {
+      display: inline-block;
+      content: counter(my-counter) "";
+      counter-increment: my-counter;
+      background: #1b2846;
+      @include inter(700);
+      font-size: 15px;
+      line-height: 19px;
+      border-radius: 8px;
+      padding: 5px 8px 4px 9px;
+      width: 29px;
+      height: 29px;
+      text-align: center;
+      margin-right: 20px;
+    }
+  }
+}
+.aside-horder {
+  &__point {
+    width: 6px;
+    height: 6px;
+    background: #2f80ed;
+    border-radius: 50%;
+    &:not(:first-child) {
+      margin-top: 30px;
+    }
+    &__hover {
+      width: 8px;
+      height: 8px;
+      background: #fff;
+    }
+  }
+}

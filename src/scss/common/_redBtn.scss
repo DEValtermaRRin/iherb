@@ -1,0 +1,33 @@
+.red-btn {
+  display: inline-block;
+  @include inter(700);
+  font-size: 20px;
+  line-height: 20px;
+  color: #fcfcfc;
+  position: relative;
+  background: #ef382a;
+  border-radius: 16px;
+  &__first {
+    margin-top: 205px;
+    padding: 25px 95px;
+  }
+  &__second{
+    padding: 25.5px 67.5px 25.5px 43.5px;
+    margin-top: 83.5px;
+    }
+
+    &__third{
+      margin-top: 71px;
+      margin-left: 30%;
+      padding: 14px 120px;
+    }
+  &::after {
+    content: url('../../img/arrow-left.svg');
+    position: absolute;
+    margin-left: 8px;
+    top: 41%;
+    width: 16px;
+    height: 16px;
+    color: #fcfcfc;
+  }
+}

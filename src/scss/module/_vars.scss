@@ -1,0 +1,26 @@
+$main-bg: #0C1938;
+$green-color: #03C623;
+$light-green: #71c67f;
+$containerWidth: 1739;
+
+
+@mixin adaptiv-font($maketSize, $realSize) {
+ $addSize: $maketSize - $realSize;
+ $containerWidth: $containerWidth - 320;
+ font-size: calc(#{$realSize + px} + #{$addSize} * ((100vw - 320px) / #{$containerWidth}));
+}
+
+@mixin inter($fw) {
+  font-family: Inter;
+  font-weight: $fw;
+}
+
+@mixin sf($fw) {
+  font-family: SFProDisplay;
+  font-weight: $fw;
+}
+
+@mixin fs($fw) {
+  font-family: FiraSans;
+  font-weight: $fw;
+}

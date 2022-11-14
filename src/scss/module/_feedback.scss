@@ -1,0 +1,96 @@
+.feedback {
+  position: relative;
+  &__title {
+    margin-top: 200px;
+    @include inter(700);
+    font-size: 50px;
+    line-height: 61px;
+    text-align: center;
+    color: #ffffff;
+  }
+
+  &__form {
+  }
+}
+
+.form-feedback {
+  width: 855px;
+  margin: 0 auto;
+  &__title {
+    display: block;
+    @include inter(700);
+    font-size: 38px;
+    line-height: 46px;
+    text-align: center;
+    color: #C3CDE1;
+  }
+
+  &__fieldset{
+    margin-top: 32px;
+  }
+  &__input {
+    width: 800px;
+    border-bottom: 1px solid #fcfcfc;
+    background-color: inherit;
+    padding: 10px 0;
+    @include inter(400);
+    font-size: 28px;
+    line-height: 33px;
+    color: #fcfcfc;
+    &::placeholder {
+      @include inter(400);
+      font-size: 22px;
+      line-height: 33px;
+      color: #fcfcfcab;
+    }
+  }
+
+
+
+  &__input-label {
+    margin-top: 23px;
+    display: block;
+    @include inter(500);
+    font-size: 18px;
+    line-height: 27px;
+    color: #fcfcfc;
+    &:first-child{
+      margin-top: 65px;
+    }
+  }
+
+  &__item {
+    padding: 0 15px;
+  }
+
+
+  &__check {
+    margin-top: 43px;
+    padding: 0 15px;
+  }
+
+  &__input-check {
+  }
+  &__input-check-label {
+    @include inter(500);
+    font-size: 20px;
+    line-height: 20px;
+    color: #fcfcfc;
+  }
+
+  &__btn-submit {
+  }
+
+  &__bottom-head {
+  }
+}
+.bottom-head {
+  &__flex {
+    gap: 27px;
+    &__feedback {
+      margin-top: 29px;
+      flex-direction: row-reverse;
+      justify-content: center;
+    }
+  }
+}

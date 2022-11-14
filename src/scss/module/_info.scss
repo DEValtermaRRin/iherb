@@ -1,0 +1,235 @@
+.info {
+  position: relative;
+  &__title {
+  }
+
+  &__flex {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 125px;
+  }
+
+  &__image {
+    display: flex;
+  }
+  &__img {
+    display: block;
+    position: relative;
+    &::after {
+      position: absolute;
+      content: url('../../img/faces/shadow.png');
+      display: block;
+      width: 45px;
+      height: 7px;
+      bottom: 4px;
+      left: 27%;
+      z-index: 3;
+    }
+    &__big {
+      position: relative;
+    }
+    &__big::after {
+      position: absolute;
+      content: url('../../img/faces/big-shadow.png');
+      display: block;
+      width: 52px;
+      height: 8px;
+      bottom: -5%;
+      left: 28%;
+      z-index: 3;
+    }
+    &__small {
+      position: relative;
+    }
+    &__small::after {
+      position: absolute;
+      content: url('../../img/faces/small-shadow.png');
+      display: block;
+      width: 45px;
+      height: 7px;
+      bottom: 8px;
+      left: 37%;
+      z-index: 3;
+    }
+  }
+
+  &__russia {
+    position: absolute;
+    width: 783px;
+    height: 486px;
+    background: url('../../img/countries/russia-dark.png') 100% 100% no-repeat;
+    z-index: 2;
+    left: 70px;
+    &__david {
+      position: absolute;
+      top: 111px;
+      right: 162px;
+      z-index: 3;
+      &::before {
+        content: 'Давид';
+        @include inter(500);
+        font-size: 16px;
+        line-height: 19px;
+        color: #2f80ed;
+        position: absolute;
+        top: -11px;
+        left: 16px;
+      }
+    }
+    &__daniil {
+      position: absolute;
+      top: 233px;
+      left: 263px;
+      z-index: 3;
+      &::before {
+        content: 'Даниил';
+        @include inter(500);
+        font-size: 16px;
+        line-height: 19px;
+        color: #2f80ed;
+        position: absolute;
+        top: -11px;
+        left: 16px;
+      }
+    }
+  }
+
+  &__usa {
+    width: 495px;
+    height: 348px;
+    background: url('../../img/countries/usa-dark.png') 100% 100% no-repeat;
+    position: absolute;
+    top: 581px;
+    left: 0;
+    &__miranda {
+      position: absolute;
+      top: 111px;
+      left: 3px;
+      z-index: 3;
+      &::before {
+        content: 'Миранда';
+        @include inter(500);
+        font-size: 16px;
+        line-height: 19px;
+        color: #2f80ed;
+        left: 100px;
+        position: absolute;
+        top: -11px;
+        left: 16px;
+      }
+    }
+    &__amina {
+      position: absolute;
+      top: 40px;
+      left: 197px;
+      z-index: 3;
+      &::before {
+        content: 'Амина';
+        @include inter(500);
+        font-size: 16px;
+        line-height: 19px;
+        color: #2f80ed;
+        position: absolute;
+        top: -11px;
+        left: 16px;
+      }
+    }
+    &__masha {
+      position: absolute;
+      top: 77px;
+      right: 0;
+      z-index: 3;
+      &::before {
+        content: 'Маша';
+        @include inter(500);
+        font-size: 16px;
+        line-height: 19px;
+        color: #2f80ed;
+        position: absolute;
+        top: -11px;
+        left: 16px;
+      }
+    }
+  }
+
+  &__kaz {
+    width: 507px;
+    height: 285px;
+    background: url('../../img/countries/kaz-dark.png') 100% 100% no-repeat;
+    position: absolute;
+    top: 562px;
+    left: 471px;
+    &__dinara {
+      position: absolute;
+      top: 11px;
+      right: 53px;
+      z-index: 3;
+      &::before {
+        content: 'Динара';
+        @include inter(500);
+        font-size: 16px;
+        line-height: 19px;
+        color: #2f80ed;
+        position: absolute;
+        top: -11px;
+        left: 16px;
+      }
+    }
+    &__ahat {
+      position: absolute;
+      top: 83px;
+      left: 169px;
+      z-index: 3;
+      &::before {
+        content: 'Ахат';
+        @include inter(500);
+        font-size: 16px;
+        line-height: 19px;
+        color: #2f80ed;
+        position: absolute;
+        top: -11px;
+        left: 16px;
+      }
+    }
+  }
+
+  &__text {
+  }
+}
+.container {
+}
+.title-info {
+  &__info {
+    margin-top: 242px;
+    @include inter(600);
+    font-size: 50px;
+    line-height: 61px;
+    color: #fcfcfc;
+    text-align: center;
+  }
+}
+
+.text-info {
+  &__title {
+    margin: 150px 0 0 0;
+    width: 785px;
+    @include inter(600);
+    font-size: 36px;
+    line-height: 44px;
+    text-align: center;
+    color: #4a5f8d;
+  }
+
+  &__text {
+    margin: 35px auto 0;
+    width: 685px;
+    @include inter(500);
+    font-size: 32px;
+    line-height: 39px;
+    color: #eadede;
+    text-align: justify;
+    &__blue {
+      color: #5295d2;
+    }
+  }
+}

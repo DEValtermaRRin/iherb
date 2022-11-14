@@ -1,0 +1,75 @@
+@import '_vars';
+.header {
+
+  &__top {
+    margin-top: 75px;
+  }
+
+  &__bottom {
+  }
+}
+.top-head {
+  &__flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  &__logo {
+    &__footer{
+      grid-area: logo;
+    }
+  }
+
+  &__search {
+  }
+
+  &__phone {
+  }
+}
+.search {
+  &__input {
+    @include inter(400);
+    width: 737px;
+    background: #1b2846;
+    padding: 14px 16px 8px 16px;
+    border-radius: 16px;
+    color: #fff;
+    font-size: 24px;
+    line-height: 100%;
+    &::placeholder {
+      @include inter(400);
+      font-size: 22px;
+      line-height: 100%;
+      color: #586179;
+      align-self: center;
+    }
+  }
+}
+.phone {
+  &__header {
+    @include inter(700);
+    font-size: 20px;
+    line-height: 24px;
+    color: #ffffff;
+    position: relative;
+  }
+  &__header::before {
+    content: url('../../img/call.svg');
+    display: inline-block;
+    position: absolute;
+    top: -1px;
+    left: -41px;
+  }
+}
+.bottom-head {
+  &__flex {
+    display: flex;
+    justify-content: end;
+    gap: 60px;
+    margin-top: 60px;
+  }
+
+  &__icon {
+  }
+}

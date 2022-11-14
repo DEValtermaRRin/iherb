@@ -1,0 +1,58 @@
+.circle {
+  width: 1032px;
+  height: 1032px;
+  background: #15366c;
+  filter: blur(246px);
+
+  &__1 {
+
+    position: absolute;
+    z-index: -1;
+    height: 1032px;
+    background: #15366c;
+    filter: blur(361px);
+    top: 0;
+    left: 0;
+    overflow: hidden;
+  }
+  &__2 {
+    position: absolute;
+    width: 996px;
+    height: 996px;
+right: 0;
+bottom: 0;
+    z-index: -1;
+    background: #15366c;
+    filter: blur(348.914px);
+    overflow: hidden;
+  }
+  &__3 {
+    position: absolute;
+    width: 996px;
+    height: 996px;
+
+    bottom: -30%;
+    left: -10%;
+
+    background: #15366c;
+    z-index: -1;
+    filter: blur(350px);
+    overflow: hidden;
+  }
+
+  &__4 {
+
+    width: 932px;
+    height: 932px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+
+    background: #15366c;
+    filter: blur(326.494px);
+    z-index: -2;
+    overflow: hidden;
+  }
+
+}

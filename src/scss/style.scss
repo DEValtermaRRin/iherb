@@ -1,0 +1,31 @@
+@import './module/_Zero-style';
+@import './module/_vars';
+@import './fonts';
+@import url('https://fonts.googleapis.com/css2?family=Istok+Web&display=swap');
+
+@import './common/_redBtn';
+@import './common/circle';
+@import './module/_header';
+@import './module/_promo';
+@import './module/_info';
+@import './module/_orders';
+@import './module/_horder';
+@import './module/reviews';
+@import './module/feedback';
+@import './module/_footer';
+
+body {
+  background: $main-bg;
+  }
+
+.container{
+  width: $containerWidth + px;
+  padding: 0 10px;
+  margin: 0 auto;
+  }
+
+@media screen and (max-width: 320px) {
+.container{
+  width: 320px;
+}
+}

@@ -1,0 +1,153 @@
+.orders {
+  position: relative;
+  &__title {
+    margin-top: 237px * 2;
+  }
+
+  &__grid {
+    margin-top: 150px;
+    display: grid;
+    grid-template: 221px 509px / 1fr;
+    gap: 125px;
+  }
+
+  &__card-text {
+    // grid-area: ct;
+  }
+  &__card-img {
+    // grid-area: ci;
+  }
+  &__arrows {
+  }
+}
+.title-order {
+  &__title {
+    @include inter(600);
+    font-size: 50px;
+    line-height: 61px;
+    color: #fcfcfc;
+    text-align: center;
+  }
+}
+.card-text {
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(321px, 1fr));
+    gap: 115px;
+  }
+  &__item {
+    width: 321px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__img {
+    width: 60px;
+    height: 60px;
+    border-radius: 16px;
+    padding: 11px;
+
+    &__blue {
+      background: #5f9ff5;
+    }
+    &__orange {
+      background: #fb9585;
+    }
+    &__violet {
+      background: #8070de;
+    }
+    &__green {
+      background: #71c67f;
+    }
+  }
+
+  &__title {
+    margin-top: 36px;
+    @include inter(700);
+    font-size: 36px;
+    line-height: 44px;
+    text-align: center;
+    color: #fcfcfc;
+  }
+
+  &__text {
+    margin-top: 22px;
+    @include inter(400);
+    font-size: 20px;
+    line-height: 29px;
+    text-align: center;
+    color: #fcfcfc;
+  }
+}
+.card-img {
+  &__grid {
+    margin-top: 125px;
+    display: grid;
+
+    grid-template-columns: repeat(4, minmax(412px, 1fr));
+    gap: 24px;
+  }
+  &__item {
+    width: 412px;
+    padding: 24px 28px 22px;
+    background: linear-gradient(180deg, #204075, #1b2846);
+    border-radius: 16px;
+
+  }
+
+  &__image {
+    border-radius: 16px;
+    width: 356px;
+    height: 291px;
+  }
+
+  &__discr {
+    height: 150px;
+        display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__title {
+    margin-top: 25px;
+    @include inter(500);
+    font-size: 26px;
+    line-height: 31px;
+    text-align: center;
+
+    color: #ffffff;
+  }
+
+  &__text {
+
+    @include inter(400);
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: #2f80ed;
+  }
+}
+
+.arrows-order {
+  &__flex {
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 23px;
+  }
+
+  &__left {
+    &:hover{
+      cursor: pointer;
+    }
+  }
+
+  &__right {
+    transform: rotate(180deg);
+    &:hover{
+      cursor: pointer;
+    }
+  }
+}

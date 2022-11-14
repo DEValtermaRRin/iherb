@@ -1,0 +1,38 @@
+@import '_vars';
+.promo {
+  &__flex {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__info {
+  }
+
+  &__title {
+    margin-top: 180px;
+    width: 571px;
+    @include inter(700);
+    font-size: 70px;
+    line-height: 85px;
+
+    color: #ffffff;
+  }
+
+  &__text {
+    margin-top: 38px;
+    width: 516px;
+    @include inter(400);
+    font-size: 26px;
+    line-height: 31px;
+    color: #ffffff;
+  }
+
+
+
+  &__image {
+  }
+}
+
+.green {
+  color: $green-color;
+}
