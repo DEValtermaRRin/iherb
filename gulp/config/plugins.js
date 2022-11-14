@@ -5,7 +5,6 @@ import browserSync from 'browser-sync'; // Локальный сервер
 import newer from 'gulp-newer'; // Проверка обновления
 import gulpIf  from 'gulp-if';
 import sourcemaps from 'gulp-sourcemaps';
-import ghPages from 'gh-pages'; // деплой на пр-pages
 
 export const plugins = {
   replace: replace,
@@ -15,5 +14,4 @@ export const plugins = {
   sourcemaps: sourcemaps,
   newer: newer,
   if: gulpIf,
-  ghPages: ghPages,
 };

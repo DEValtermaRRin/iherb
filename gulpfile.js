@@ -7,8 +7,6 @@ import { path } from './gulp/config/path.js';
 // Импорт общих плагинов
 import { plugins } from './gulp/config/plugins.js';
 
-import ghPages from 'gh-pages';
-
 
 // Передаем значения в глобальную переменную
 global.app = {
@@ -58,16 +56,11 @@ const build = gulp.series(reset, mainTasks);
 const deployZIP = gulp.series(reset, mainTasks, zip);
 const deployFTP = gulp.series(reset, mainTasks, ftp);
 
-function deployGhPages(cb) {
-  ghPages.publish(path.join(process.cwd(), './dist'), cb)
-}
-
 // Экспорт сценариев
 export { dev }
 export { build }
 export { deployZIP }
 export { deployFTP }
-exports.deployGhPages = deployGhPages;
 
 // Выполнение сценария по умолчанию
 gulp.task('default', dev);
