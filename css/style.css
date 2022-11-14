@@ -444,7 +444,7 @@ h6 {
 
 .info__img::after {
   position: absolute;
-  content: url("../.././img/faces/shadow.png");
+  content: url("../img/faces/shadow.png");
   display: block;
   width: 45px;
   height: 7px;
@@ -459,7 +459,7 @@ h6 {
 
 .info__img__big::after {
   position: absolute;
-  content: url("../.././img/faces/big-shadow.png");
+  content: url("../img/faces/big-shadow.png");
   display: block;
   width: 52px;
   height: 8px;
@@ -474,7 +474,7 @@ h6 {
 
 .info__img__small::after {
   position: absolute;
-  content: url("../.././img/faces/small-shadow.png");
+  content: url("../img/faces/small-shadow.png");
   display: block;
   width: 45px;
   height: 7px;
@@ -484,7 +484,7 @@ h6 {
 }
 
 .no-webp .info__russia{
-  background: url("../.././img/countries/russia-dark.png") 100% 100% no-repeat; }
+  background: url("../img/countries/russia-dark.png") 100% 100% no-repeat; }
 
 .info__russia {
   position: absolute;
@@ -533,7 +533,7 @@ h6 {
 }
 
 .no-webp .info__usa{
-  background: url("../.././img/countries/usa-dark.png") 100% 100% no-repeat; }
+  background: url("../img/countries/usa-dark.png") 100% 100% no-repeat; }
 
 .info__usa {
   width: 495px;
@@ -602,7 +602,7 @@ h6 {
 }
 
 .no-webp .info__kaz{
-  background: url("../.././img/countries/kaz-dark.png") 100% 100% no-repeat; }
+  background: url("../img/countries/kaz-dark.png") 100% 100% no-repeat; }
 
 .info__kaz {
   width: 507px;
@@ -1481,8 +1481,8 @@ body {
   }
 }
 
-.webp .info__russia{ background: url(../.././img/countries/russia-dark.webp) 100% 100% no-repeat; }
+.webp .info__russia{ background: url(../img/countries/russia-dark.webp) 100% 100% no-repeat; }
 
-.webp .info__usa{ background: url(../.././img/countries/usa-dark.webp) 100% 100% no-repeat; }
+.webp .info__usa{ background: url(../img/countries/usa-dark.webp) 100% 100% no-repeat; }
 
-.webp .info__kaz{ background: url(../.././img/countries/kaz-dark.webp) 100% 100% no-repeat; }
+.webp .info__kaz{ background: url(../img/countries/kaz-dark.webp) 100% 100% no-repeat; }
