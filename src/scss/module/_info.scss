@@ -17,7 +17,7 @@
     position: relative;
     &::after {
       position: absolute;
-      content: url('../../img/faces/shadow.png');
+      content: url('../.././img/faces/shadow.png');
       display: block;
       width: 45px;
       height: 7px;
@@ -30,7 +30,7 @@
     }
     &__big::after {
       position: absolute;
-      content: url('../../img/faces/big-shadow.png');
+      content: url('../.././img/faces/big-shadow.png');
       display: block;
       width: 52px;
       height: 8px;
@@ -43,7 +43,7 @@
     }
     &__small::after {
       position: absolute;
-      content: url('../../img/faces/small-shadow.png');
+      content: url('../.././img/faces/small-shadow.png');
       display: block;
       width: 45px;
       height: 7px;
@@ -57,7 +57,7 @@
     position: absolute;
     width: 783px;
     height: 486px;
-    background: url('../../img/countries/russia-dark.png') 100% 100% no-repeat;
+    background: url('../.././img/countries/russia-dark.png') 100% 100% no-repeat;
     z-index: 2;
     left: 70px;
     &__david {
@@ -97,7 +97,7 @@
   &__usa {
     width: 495px;
     height: 348px;
-    background: url('../../img/countries/usa-dark.png') 100% 100% no-repeat;
+    background: url('../.././img/countries/usa-dark.png') 100% 100% no-repeat;
     position: absolute;
     top: 581px;
     left: 0;
@@ -155,7 +155,7 @@
   &__kaz {
     width: 507px;
     height: 285px;
-    background: url('../../img/countries/kaz-dark.png') 100% 100% no-repeat;
+    background: url('../.././img/countries/kaz-dark.png') 100% 100% no-repeat;
     position: absolute;
     top: 562px;
     left: 471px;
